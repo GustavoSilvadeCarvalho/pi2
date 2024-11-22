@@ -1,6 +1,7 @@
 import * as jose from 'jose';
 import { cookies } from 'next/headers';
 
+
 async function openSessionToken(token:string) {
     const secret = new TextEncoder().encode(process.env.AUTH_SECRET);
     const { payload } = await jose.jwtVerify(token, secret);
@@ -17,7 +18,7 @@ async function createSessionToken(payload = {}) {
     .sign(secret);
     const {exp} = await openSessionToken(session);
 
-    cookies().set('session', session, {
+    (await cookies()).set('session', session, {
         expires: (exp as number) * 1000,
         path: '/',
         httpOnly: true
@@ -25,7 +26,7 @@ async function createSessionToken(payload = {}) {
 }
 
 async function isSessionValid() {
-    const sessionCookie = cookies().get('session');
+    const sessionCookie = (await cookies()).get('session');
 
     if (sessionCookie) {
         const {value} = sessionCookie;
