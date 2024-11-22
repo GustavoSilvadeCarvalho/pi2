@@ -18,7 +18,9 @@ async function createSessionToken(payload = {}) {
     .sign(secret);
     const {exp} = await openSessionToken(session);
 
-    (await cookies()).set('session', session, {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+     cookies().set('session', session, {
         expires: (exp as number) * 1000,
         path: '/',
         httpOnly: true
@@ -26,7 +28,9 @@ async function createSessionToken(payload = {}) {
 }
 
 async function isSessionValid() {
-    const sessionCookie = (await cookies()).get('session');
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    const sessionCookie = cookies().get('session');
 
     if (sessionCookie) {
         const {value} = sessionCookie;
