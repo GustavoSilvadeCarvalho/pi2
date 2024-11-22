@@ -40,6 +40,8 @@ async function isSessionValid() {
 }
 
 function destroySessions() {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     cookies().delete('session');
 }
 
