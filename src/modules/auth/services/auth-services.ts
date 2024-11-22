@@ -28,9 +28,7 @@ async function createSessionToken(payload = {}) {
 }
 
 async function isSessionValid() {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    const sessionCookie = cookies().get('session');
+    const sessionCookie = (await cookies()).get('session');
 
     if (sessionCookie) {
         const {value} = sessionCookie;
