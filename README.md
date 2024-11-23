@@ -11,9 +11,7 @@ Este é um projeto de um site informativo sobre a dengue, onde os usuários pode
 ---
 
 ## 📋 Funcionalidades
-- Cadastro de usuários com nome, cidade e idade.
-- Questionário interativo sobre a dengue.
-- Gráficos para visualização de dados sobre a doença.
+- Cadastro de usuários com nome, email e senha.
 - Banco de dados relacional hospedado no [Neon](https://neon.tech).
 
 ---
