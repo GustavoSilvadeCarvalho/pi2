@@ -1,4 +1,4 @@
-import CardRecurso from "./cardRecurso";
+import CardRecurso from "../cardRecurso";
 
 export default function SegundaSecao() {
     return (

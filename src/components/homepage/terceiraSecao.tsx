@@ -1,5 +1,5 @@
-import Botao from "./botao";
-import CardTransmissao from "./cardTransmissao";
+import Botao from "../botao";
+import CardTransmissao from "../cardTransmissao";
 
 export default function TerceiraSecao() {
     return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Botao from "./botao";
+import Botao from "../botao";
 
 export default function PrimeiraSecao() {
     return (

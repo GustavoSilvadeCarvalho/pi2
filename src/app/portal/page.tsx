@@ -1,7 +1,7 @@
 import Pagina from "@/components/pagina";
-import PrimeiraSecao from "@/components/primeiraSecao";
-import SegundaSecao from "@/components/segundaSecao";
-import TerceiraSecao from "@/components/terceiraSecao";
+import PrimeiraSecao from "@/components/homepage/primeiraSecao";
+import SegundaSecao from "@/components/homepage/segundaSecao";
+import TerceiraSecao from "@/components/homepage/terceiraSecao";
 import Link from "next/link";
 
 export default function PortalPage() {
