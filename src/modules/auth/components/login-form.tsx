@@ -29,7 +29,7 @@ export default function LoginForm() {
       </CardContent>
       <CardFooter className="flex justify-between">
         <Button type="submit">Entrar</Button>
-        <Link href="/portal/cadastro" className={buttonVariants({variant: 'link'})}>Crir Conta</Link>
+        <Link href="/portal/cadastro" className={buttonVariants({variant: 'link'})}>Criar Conta</Link>
       </CardFooter>
       </form>
     </Card>
