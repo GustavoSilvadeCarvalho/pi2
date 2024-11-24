@@ -1,17 +1,23 @@
-import { NextRequest, NextResponse } from "next/server"
-import AuthService from "./modules/auth/services/auth-services";
+import { NextResponse } from "next/server"
+//import AuthService from "./modules/auth/services/auth-services";
 
 export const config = {
     matcher: '/((?!_next/static|_next/image|favicon.ico).*)'
 }
 
+/*
 const publicRoutes = [
     '/',
     '/portal/cadastro',
-    '/portal/login'
+    '/portal/login',
+    '/portal'
 ]
+*/
 
-export async function middleware(req: NextRequest) {
+
+export async function middleware() {
+
+    /*
     const pathname = req.nextUrl.pathname;
 
     if(publicRoutes.includes(pathname)) {
@@ -28,6 +34,7 @@ export async function middleware(req: NextRequest) {
 
         return NextResponse.redirect(new URL('/portal/login', req.url))
     }
+    */
 
     return NextResponse.next();
 }
