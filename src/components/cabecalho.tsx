@@ -15,7 +15,7 @@ export default function Cabecalho() {
                     <Link href='/portal'><li>Home</li></Link>
                     <Link href='/portal'><li>Sobre Dengue</li></Link>
                     <Link href='/portal/sintomas'><li>Sintomas</li></Link>
-                    <Link href='/'><li>Tratamento</li></Link>
+                    <Link href='/portal/tratamentos'><li>Tratamento</li></Link>
                     <Link href='/'><li>Transmissão</li></Link>
                 </ul>
             </nav>
