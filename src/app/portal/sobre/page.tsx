@@ -1,5 +1,5 @@
 import Pagina from "@/components/pagina";
-import PaginaDengue from "@/components/transmissao/primeiraSecao";
+import PaginaDengue from "@/components/sobre/primeiraSessao";
 
 export default function SintomasPage() {
     return (
