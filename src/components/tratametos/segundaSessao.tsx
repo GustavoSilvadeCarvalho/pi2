@@ -1,8 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
-
 export default function SegundaSecaoTratamentos() {
     return (
         <div className="flex flex-col items-center justify-center mt-12">
