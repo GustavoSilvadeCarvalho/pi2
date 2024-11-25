@@ -13,7 +13,7 @@ export default function Cabecalho() {
             <nav className="flex items-center">
                 <ul className="flex gap-10 items-center">
                     <Link href='/portal'><li>Home</li></Link>
-                    <Link href='/portal'><li>Sobre Dengue</li></Link>
+                    <Link href='/portal/sobre'><li>Sobre Dengue</li></Link>
                     <Link href='/portal/sintomas'><li>Sintomas</li></Link>
                     <Link href='/portal/tratamentos'><li>Tratamento</li></Link>
                     <Link href='/portal/transmissao'><li>Transmissão</li></Link>
