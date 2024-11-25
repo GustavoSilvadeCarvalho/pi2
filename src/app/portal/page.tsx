@@ -1,8 +1,10 @@
+"use client"
+ 
 import Pagina from "@/components/pagina";
 import PrimeiraSecao from "@/components/homepage/primeiraSecao";
 import SegundaSecao from "@/components/homepage/segundaSecao";
 import TerceiraSecao from "@/components/homepage/terceiraSecao";
-import Link from "next/link";
+import { Certeza } from "@/components/certeza";
 
 export default function PortalPage() {
     return (
@@ -10,8 +12,7 @@ export default function PortalPage() {
             <PrimeiraSecao />
             <SegundaSecao />
             <TerceiraSecao />
-            <h1 className="text-4xl font-bold">Portal</h1>
-            <Link href="/api/logout">Logout</Link>
+            <Certeza />
         </Pagina>
     )
 }
