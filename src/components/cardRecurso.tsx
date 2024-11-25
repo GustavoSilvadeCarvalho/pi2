@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type CardProps = {
   title: string; // Título do card
@@ -6,9 +7,10 @@ type CardProps = {
   buttonText: string; // Texto do botão
   imageSrc: string; // Caminho da imagem (opcional)
   imageAlt?: string; // Texto alternativo para a imagem (opcional)
+  buttonHref: string;
 };
 
-export default function CardRecurso({ title, description, buttonText, imageSrc, imageAlt }: CardProps) {
+export default function CardRecurso({ title, description, buttonText, imageSrc, imageAlt, buttonHref }: CardProps) {
   return (
     <div className="max-w-sm p-4">
       {/* Imagem */}
@@ -27,7 +29,7 @@ export default function CardRecurso({ title, description, buttonText, imageSrc, 
       <p className="text-base text-gray-600 mt-2">{description}</p>
 
       {/* Botão */}
-      <button className="mt-4 hover:underline">{buttonText} &rarr;</button>
+      <button className="mt-4 hover:underline"><Link href={buttonHref}>{buttonText} &rarr;</Link></button>
     </div>
   );
 }
