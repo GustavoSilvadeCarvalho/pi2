@@ -33,7 +33,7 @@ export default function PrimeiraSecaoTransmissao() {
       {/* Seção de Texto Explicativo */}
       <div className="flex justify-between gap-16">
         <div className="w-1/2">
-          <h1 className="text-4xl font-bold">Tratamento da Dengue</h1>
+          <h1 className="text-4xl font-bold">Transmissão da Dengue</h1>
           <p className="text-lg mt-4">
             A dengue é transmitida principalmente por mosquitos do gênero Aedes, em especial o Aedes aegypti, que se
             reproduz em água parada. A transmissão ocorre quando o mosquito fêmea pica uma pessoa infectada com o vírus da

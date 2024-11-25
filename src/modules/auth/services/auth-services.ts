@@ -23,7 +23,8 @@ async function createSessionToken(payload = {}) {
      cookies().set('session', session, {
         expires: (exp as number) * 1000,
         path: '/',
-        httpOnly: true
+        httpOnly: true,
+        secure: true
     })
 }
 

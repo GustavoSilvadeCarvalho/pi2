@@ -1,10 +1,9 @@
 "use client"
- 
+
 import Pagina from "@/components/pagina";
 import PrimeiraSecao from "@/components/homepage/primeiraSecao";
 import SegundaSecao from "@/components/homepage/segundaSecao";
 import TerceiraSecao from "@/components/homepage/terceiraSecao";
-import { Certeza } from "@/components/certeza";
 
 export default function PortalPage() {
     return (
@@ -12,7 +11,7 @@ export default function PortalPage() {
             <PrimeiraSecao />
             <SegundaSecao />
             <TerceiraSecao />
-            <Certeza />
+
         </Pagina>
     )
 }
