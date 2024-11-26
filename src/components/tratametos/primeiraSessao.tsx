@@ -43,20 +43,20 @@ export default function PrimeiraSecaoTratamentos() {
     };
 
     if (!isClient) {
-        return <div>Loading...</div>; 
+        return <div>Loading...</div>;
     }
 
     return (
-        <div className="flex items-center justify-between gap-40 py-16 max-w-[1400px] mx-auto">
+        <div className="flex flex-wrap xl:flex-nowrap items-center justify-center xl:justify-between gap-40 py-16 max-w-[1400px] mx-auto">
 
-            <div className="flex flex-col w-1/2 max-w-[600px] leading-relaxed">
+            <div className="flex flex-col md:w-[60%] xl:w-1/2 max-w-[600px] leading-relaxed">
                 <h1 className="text-4xl font-bold">Tratamentos para a Dengue</h1>
                 <p className="text-lg mt-4">
                     Não existe um tratamento específico para a dengue, mas cuidados essenciais podem ser tomados para aliviar os sintomas e auxiliar na recuperação. Aqui estão alguns dos tratamentos recomendados.
                 </p>
             </div>
 
-            <div className="relative flex items-center justify-center w-1/2">
+            <div className="relative flex items-center justify-center md:w-[60%] xl:w-1/2">
                 <button
                     className="bg-gray-700 text-white p-2 rounded-full absolute left-[-40px]"
                     onClick={prevTreatment}
@@ -64,7 +64,7 @@ export default function PrimeiraSecaoTratamentos() {
                     &lt;
                 </button>
 
-                <div className="flex flex-col items-center justify-center w-[350px] h-[450px] p-6 border border-gray-200 rounded-xl shadow-lg">
+                <div className="flex flex-col items-center justify-center max-w-[350px] w-full h-[450px] p-6 border border-gray-200 rounded-xl shadow-lg">
                     <Image
                         src={tratamentos[currentTreatmentIndex].image}
                         alt={tratamentos[currentTreatmentIndex].title}

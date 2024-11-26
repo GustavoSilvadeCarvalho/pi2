@@ -8,7 +8,7 @@ export interface PaginaProps {
 
 export default function Pagina(props: PaginaProps) {
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <Cabecalho />
             <main className={`${props.className ?? ''}`}>{props.children}</main>
         </div>

@@ -31,8 +31,8 @@ export default function PrimeiraSecaoTransmissao() {
   return (
     <div className="max-w-[1400px] mx-auto py-16">
       {/* Seção de Texto Explicativo */}
-      <div className="flex justify-between gap-16">
-        <div className="w-1/2">
+      <div className="flex flex-wrap xl:flex-nowrap justify-center xl:justify-between items-center gap-16">
+        <div className="min-[1279]:w-[60%] xl:w-1/2">
           <h1 className="text-4xl font-bold">Transmissão da Dengue</h1>
           <p className="text-lg mt-4">
             A dengue é transmitida principalmente por mosquitos do gênero Aedes, em especial o Aedes aegypti, que se
@@ -60,7 +60,7 @@ export default function PrimeiraSecaoTransmissao() {
         </div>
 
         {/* Seção de Cards de Prevenção */}
-        <div className="w-1/3 space-y-6">
+        <div className="min-[1279]:w-[60%] xl:w-1/2 space-y-6">
           {preventionCards.map((card, index) => (
             <div
               key={index}

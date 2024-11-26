@@ -1,6 +1,6 @@
 export default function PrimeiraSecao() {
   return (
-    <div className="flex max-w-[1600px] justify-around items-center gap-20">
+    <div className="flex max-w-[1600px] flex-wrap justify-around items-center gap-20">
       <div className="flex flex-col items-center text-center max-w-[400] gap-10">
         <h1 className="font-bold text-4xl">Entenda a Dengue</h1>
         <p className="text-lg max-w-[400]">A dengue é uma das doenças mais prevalentes em regiões tropicais e subtropicais,

@@ -2,9 +2,9 @@ import CardRecurso from "../cardRecurso";
 
 export default function SegundaSecao() {
     return (
-        <div className="flex flex-col w-full items-center text-center max-w-[1600px]">
-            <h1 className="text-4xl font-bold max-w-3xl py-20">Entenda tudo sobre a dengue: sintomas, tratamento e prevenção.</h1>
-            <div className="flex justify-center gap-20">
+        <div className="flex flex-col w-full items-center max-w-[1600px]">
+            <h1 className="text-4xl text-center font-bold max-w-3xl py-20">Entenda tudo sobre a dengue: sintomas, tratamento e prevenção.</h1>
+            <div className="flex justify-center gap-20 flex-wrap">
                 <CardRecurso
                     title="Dengue: uma doença viral que afeta milhões anualmente."
                     description="A dengue é transmitida por mosquitos e pode causar sintomas graves."
