@@ -1,8 +1,8 @@
-'use client'
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { Certeza } from "./certeza";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import { Certeza } from './certeza';
 
 export default function Cabecalho() {
     const [menuAberto, setMenuAberto] = useState(false);
@@ -16,7 +16,8 @@ export default function Cabecalho() {
                 alt="brasao indaiatuba"
             />
 
-            <nav className="hidden min-[930px]:flex items-center">
+            {/* Menu para telas grandes */}
+            <nav className="hidden lg:flex items-center">
                 <ul className="flex gap-10 items-center text-lg">
                     <Link href="/portal">
                         <li>Home</li>
@@ -36,7 +37,8 @@ export default function Cabecalho() {
                 </ul>
             </nav>
 
-            <div className="min-[930px]:hidden">
+            {/* Botão do menu hamburguer */}
+            <div className="lg:hidden">
                 <button
                     className="p-2 focus:outline-none"
                     onClick={() => setMenuAberto(!menuAberto)}
@@ -58,9 +60,9 @@ export default function Cabecalho() {
                 </button>
             </div>
 
-            {/* Dropdown para o menu hamburger */}
+            {/* Dropdown do menu hamburguer */}
             {menuAberto && (
-                <nav className="absolute top-16 right-0 bg-white shadow-lg rounded-lg p-4 min-[930px]:hidden">
+                <nav className="absolute top-16 right-0 bg-white shadow-lg rounded-lg p-4 lg:hidden">
                     <ul className="flex flex-col gap-4 text-lg">
                         <Link href="/portal">
                             <li onClick={() => setMenuAberto(false)}>Home</li>
@@ -82,7 +84,8 @@ export default function Cabecalho() {
                 </nav>
             )}
 
-            <div className="max-[930px]:hidden">
+            {/* Componente adicional para telas grandes */}
+            <div className="hidden lg:block">
                 <Certeza />
             </div>
         </div>
