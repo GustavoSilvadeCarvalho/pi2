@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <footer className="bg-gray-800 text-white py-6">
-            <div className="flex items-center justify-around container mx-auto px-4">
+            <div className="flex flex-wrap items-center justify-around container mx-auto px-4">
                 <div className="flex space-x-4 mt-4 md:mt-0">
                     <a
                         href="https://github.com/GustavoSilvadeCarvalho/pi2"
