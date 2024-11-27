@@ -1,4 +1,5 @@
 import Cabecalho from "./cabecalho";
+import Footer from "./footer";
 
 export interface PaginaProps {
     children: React.ReactNode
@@ -11,6 +12,7 @@ export default function Pagina(props: PaginaProps) {
         <div className="overflow-x-hidden">
             <Cabecalho />
             <main className={`${props.className ?? ''}`}>{props.children}</main>
+            <Footer />
         </div>
     )
 }
