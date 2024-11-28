@@ -8,36 +8,35 @@ export default function Cabecalho() {
     const [menuAberto, setMenuAberto] = useState(false);
 
     return (
-        <div className="flex justify-between mx-20 mt-5 items-center">
+        <div className="bg-white text-gray-800 p-6 w-full flex justify-between items-center">
             <Image
                 src="/brasao.jpg"
                 width={100}
                 height={100}
                 alt="brasao indaiatuba"
+                className="hover:scale-110 transition-transform duration-500"
             />
 
-            {/* Menu para telas grandes */}
             <nav className="hidden lg:flex items-center">
-                <ul className="flex gap-10 items-center text-lg">
+                <ul className="flex gap-10 items-center text-xl font-bold">
                     <Link href="/portal">
-                        <li>Home</li>
+                        <li className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Home</li>
                     </Link>
                     <Link href="/portal/sobre">
-                        <li>Sobre Dengue</li>
+                        <li className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Sobre Dengue</li>
                     </Link>
                     <Link href="/portal/sintomas">
-                        <li>Sintomas</li>
+                        <li className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Sintomas</li>
                     </Link>
                     <Link href="/portal/tratamentos">
-                        <li>Tratamento</li>
+                        <li className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Tratamento</li>
                     </Link>
                     <Link href="/portal/transmissao">
-                        <li>Transmissão</li>
+                        <li className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Transmissão</li>
                     </Link>
                 </ul>
             </nav>
 
-            {/* Botão do menu hamburguer */}
             <div className="lg:hidden">
                 <button
                     className="p-2 focus:outline-none"
@@ -60,31 +59,29 @@ export default function Cabecalho() {
                 </button>
             </div>
 
-            {/* Dropdown do menu hamburguer */}
             {menuAberto && (
-                <nav className="absolute top-16 right-0 bg-white shadow-lg rounded-lg p-4 lg:hidden">
-                    <ul className="flex flex-col gap-4 text-lg">
+                <nav className="absolute top-16 right-0 bg-white shadow-lg rounded-lg p-4 lg:hidden animate-slide-down w-full">
+                    <ul className="flex flex-col gap-4 text-xl text-gray-800">
                         <Link href="/portal">
-                            <li onClick={() => setMenuAberto(false)}>Home</li>
+                            <li onClick={() => setMenuAberto(false)} className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Home</li>
                         </Link>
                         <Link href="/portal/sobre">
-                            <li onClick={() => setMenuAberto(false)}>Sobre Dengue</li>
+                            <li onClick={() => setMenuAberto(false)} className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Sobre Dengue</li>
                         </Link>
                         <Link href="/portal/sintomas">
-                            <li onClick={() => setMenuAberto(false)}>Sintomas</li>
+                            <li onClick={() => setMenuAberto(false)} className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Sintomas</li>
                         </Link>
                         <Link href="/portal/tratamentos">
-                            <li onClick={() => setMenuAberto(false)}>Tratamento</li>
+                            <li onClick={() => setMenuAberto(false)} className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Tratamento</li>
                         </Link>
                         <Link href="/portal/transmissao">
-                            <li onClick={() => setMenuAberto(false)}>Transmissão</li>
+                            <li onClick={() => setMenuAberto(false)} className="hover:scale-105 transition-transform duration-300 cursor-pointer hover:text-indigo-600">Transmissão</li>
                         </Link>
                         <Certeza />
                     </ul>
                 </nav>
             )}
 
-            {/* Componente adicional para telas grandes */}
             <div className="hidden lg:block">
                 <Certeza />
             </div>
